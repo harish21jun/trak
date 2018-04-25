@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<title>TRAK</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/app.css" rel="stylesheet">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div id="wrapper" class="gem-wrapper" style="background:white">
+		<div id="header-wrapper" style="padding-left:15px;padding-right:25px;/*position:fixed;z-index:99;width:100%;*/">
+
+
+			<header style="background:white;">
+					<h2 style="padding-left:15px" class=""><img class="hidden-xs" src="//cdn.tsl.telus.com/img/logoTelus.gif">TRAK</h2>
+
+
+						</header>
+</div>
+
+				<div id="navbar" class="collapse navbar-collapse">
+
+				</div>
+
+
+
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-8 col-md-10">
+					<% if (errors.length) { %>
+						<div class="alert alert-danger alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<% for (var i in errors) { %>
+						<span> <%= errors[i].message %> </span><br/>
+						<% } %>
+						</div>
+					<% } %>
+					<%- body %>
+				</div>
+			</div>
+		</div><!-- container-fluid -->
+
+	</div><!-- container -->
+
+
+
+<!--
+	<footer class="footer">
+
+
+		<div class="span6 text-right">
+
+		© 2018 TELUS Communications Company | Powered by <a href="http://go/intsys" target="_blank">Team TOCP</a> &nbsp;
+
+		</div>
+	</footer>
+-->
+	<!-- Bootstrap core JavaScript -->
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>

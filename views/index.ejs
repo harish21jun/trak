@@ -1,0 +1,177 @@
+
+		<h3 "align:left">New TRAK</h3>
+	<form method="POST" action="/createTrak" enctype="multipart/form-data">
+
+
+
+
+
+		<div class="row">
+		<div class="form-group col-md-6  " >
+		<label class="col-md-4 text-right input-required" for="requestorId"> Requestor x/tid</label>
+		<div id="requestorIdDiv" class="col-md-7"><input id="requestorId" name="requestorId" type="text" value="" placeholder = "x124634"   required = "true" ></input></div>
+		</div>
+		</div>
+
+
+		<div class="row">
+		<div class="form-group col-md-6  " >
+		<label class="col-md-4 text-right input-required" for="wbs"> WBS</label>
+		<div id="wbsDiv" class="col-md-7"><input id="wbs" name="wbs" type="text" value=""  placeholder = "Ex. Cxxxx"   required = "true" ></input></div>
+		</div>
+		</div>
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="stack"> Stack</label>
+<div id="stackDiv" class="col-md-7"><input id="stack" name="stack" type="text" value=""      placeholder = "Ex. COMPASS"   required = "true" ></input></div>
+</div>
+</div>
+
+<!--
+		<label class="control-label">WBS Code </label>
+		<input type="text" id="wbs" class="form-control" name="wbs" value="<%= trakDetails.wbs %>" />
+
+		<label class="control-label">Stack </label>
+		<input type="text" id="stack" class="form-control" name="stack" value="<%= trakDetails.stack %>" />
+
+		<label class="control-label">Target Release </label>
+		<input type="text" id="release" class="form-control" name="release" value="<%= trakDetails.release %>" />
+
+		<label class="control-label">Target Date </label>
+		<input type="text" id="date" class="form-control" name="date" value="<%= trakDetails.date %>" />
+
+		<label class="control-label">Environment </label>
+		<input type="text" id="env" class="form-control" name="env" value="<%= trakDetails.env %>" />
+
+
+		<label class="control-label">Project Name </label>
+		<input type="text" id="project" class="form-control" name="project" value="<%= trakDetails.project %>" />
+
+		<label class="control-label">Mediation Name </label>
+		<input type="text" id="mediation" class="form-control" name="mediation" value="<%= trakDetails.mediation %>" />
+
+		<label class="control-label">Artifact Server </label>
+		<input type="text" id="server" class="form-control" name="server" value="<%= trakDetails.server %>" />
+
+		<label class="control-label">Artifact(s) </label>
+		<input type="text" id="artifact" class="form-control" name="artifact" value="<%= trakDetails.artifact %>" />
+
+		<label class="control-label">Artifact Directory </label>
+		<input type="text" id="dir" class="form-control" name="dir" value="<%= trakDetails.dir %>" />
+
+		<label class="control-label">Pre-Install Script(s) </label>
+		<input type="text" id="prescript" class="form-control" name="prescript" value="<%= trakDetails.prescript %>" />
+
+		<label class="control-label">Post-Install Script(s) </label>
+		<input type="text" id="postscript" class="form-control" name="postscript" value="<%= trakDetails.postscript %>" />
+
+		<label class="control-label">Deployment Instruction(s) </label>
+		<input type="text" id="instruction" class="form-control" name="instruction" value="<%= trakDetails.instruction %>" />
+
+		<label class="control-label">File attachment </label>
+		<input type="file" id="filetoupload" class="form-control" name="filetoupload" value="<%= trakDetails.filetoupload %>" />
+	-->
+
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="release"> Target Release</label>
+<div id="releaseDiv" class="col-md-7"><input id="release" name="release" type="text" value=""      placeholder = "Ex. Apr Major 2017"   required = "true" ></input></div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="date"> Target Date</label>
+<div id="dateDiv" class="col-md-7"><input id="date" name="date" type="date" value=""  ></input></div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="env"> Environment</label>
+<div id="envDiv" class="col-md-7"><input id="env" name="env" type="text" value=""      placeholder = "Ex. ITN01"   required = "true" ></input></div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="project"> Project</label>
+<div id="projectDiv" class="col-md-7"><input id="project" name="project" type="text" value=""      placeholder = "Ex. Billing"   required = "true" ></input></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="mediation"> Mediation Name</label>
+<div id="mediationDiv" class="col-md-7"><input id="mediation" name="mediation" type="text" value=""      placeholder = "Ex. CESMediationV2_0"   required = "true" ></input></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-md-6  " >
+<label class="col-md-4 text-right input-required" for="server"> Artifact Server</label>
+<div id="serverDiv" class="col-md-7"><input id="server" name="server" type="text" value=""  placeholder = "Ex. DV1"   required = "true" ></input></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right input-required" for="artifact"> Artifact(s)</label>
+<div id="artifactDiv" class="col-md-9">
+	<textarea id="artifact" name="artifact" placeholder = "Ex. DSCMediationApp.ear"   required = "true"   style = "height:120px;width:250px;" >
+</textarea></div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right input-required" for="dir"> Artifact Directory</label>
+<div id="dirDiv" class="col-md-9">
+	<textarea id="dir" name="dir" required = "true"   style = "height:120px;width:250px;" ></textarea></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right" for="dir"> Pre-Install Script(s)</label>
+<div id="prescriptDiv" class="col-md-9">
+	<textarea id="prescript" name="prescript"  style = "height:120px;width:250px;" ></textarea></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right" for="dir"> Post-Install Script(s)</label>
+<div id="postscriptDiv" class="col-md-9">
+	<textarea id="postscript" name="postscript"  style = "height:120px;width:250px;" ></textarea></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right" for="dir"> Deployment Instruction(s)</label>
+<div id="instructionDiv" class="col-md-9">
+	<textarea id="instruction" name="instruction"  style = "height:120px;width:250px;" ></textarea></div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group  col-md-12 row1col-padding  " >
+<label class="col-md-2 text-right" for="filetoupload"> Attachment</label>
+<div id="filetouploadDiv" class="col-md-7"><input id="filetoupload" name="filetoupload" type="file" value="" ></input></div>
+</div>
+</div>
+
+
+
+		<div class="col-md-10 " style="padding-right:10%;margin-left:280px;">
+														<button type="submit" id="submitBtn" name="submitBtn" class="btn btn-primary"  > Submit <i class="fa fa-spinner green  fa-spin" id="spinner_green" ></i></button>
+				 				</div>
+
+	</form>
