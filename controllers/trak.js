@@ -9,7 +9,11 @@ exports.createTrak = function(req, response,next) {
 
 var jiraEnv = process.env.JIRA_URL;
 var jiraEnvAuth = process.env.JIRA_AUTH;
-var jiraProjectKey = "TOCP_ADR";
+var jiraProjectKey = process.env.JIRA_PROJECT_KEY;
+  
+  console.log("jiraEnv: "+jiraEnv);
+  console.log("jiraProjectKey: "+jiraProjectKey);
+ 
 
 var jiraBrowseURI ="";
    var options = {
@@ -72,7 +76,7 @@ var summary="";
              };
 
             jiraRequestBody = JSON.stringify(jiraAPIRequest);
-            //console.log("jiraRequestBody"+jiraRequestBody);
+            console.log("jiraRequestBody: "+jiraRequestBody);
 
         if(files.filetoupload.name){
          var oldpath = files.filetoupload.path;
